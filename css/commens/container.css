@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+#container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+}
+.section {
+    width: 100%;
+    height: auto;
+}
+
+/* section1 */
+.section.sec1 {
+    width: 100%;
+    height: auto;
+}
+.section.sec1 .inner-sec1 {
+    width: 100%;
+    height: 460px;
+    background: url(../../img/gallery.jpg) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.section.sec1 .inner-sec1 h1 {
+    padding-top: 156px;
+    font-family: 'Roboto', sans-serif;
+    width: 684px;
+    height: 46px;
+    text-shadow: #000 0px 16px 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0px auto;
+    cursor: default;
+}
+
+
+
+/* section2 */
+.section.sec2 {
+    width: 100%;
+    height: auto;
+    padding: 40px 0px 27px;
+}
+.section.sec2 .inner-sec2 {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+.section.sec2 .inner-sec2 .box {
+    width: 29.5%;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 30px;
+}
+.section.sec2 .inner-sec2 .box h3 {
+    color: rgba(0,0,0,1.00);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 4px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid rgba(225,225,225,1.00);
+    cursor: default;
+}
+.section.sec2 .inner-sec2 .box ul li {
+    color: rgba(0,0,0,1.00);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 32px;
+    height: 32px;
+    vertical-align: middle;
+    justify-content: center;
+}
+.section.sec2 .inner-sec2 .box ul li:first-child {
+    margin-top: 10px;
+}
+.section.sec2 .inner-sec2 .box ul li a {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.section.sec2 .inner-sec2 .box ul li:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+.section.sec2 .inner-sec2 .box a img {
+    width: 260px;
+    margin-top: 20px;
+    display: block;
+}
+.section.sec2 .inner-sec2 .box a.more:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* section3 */
+.section.sec3 {
+    width: 100%;
+    height: auto;
+    background: rgba(246,246,246,1.00);
+}
+.section.sec3 .inner-sec3 {
+    background: url(../../img/downLoad_phone.png) 109px 0px / contain no-repeat;
+    width: 890px;
+    height: 280px;
+    padding-left: 366px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+.section.sec3 .inner-sec3 h3 {
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    margin-left: 4px;
+    padding-top: 101px;
+    color: rgba(0,0,0,1.00);
+}
+.section.sec3 .inner-sec3 a img {
+    width: 190px;
+    height: 52px;
+}
+.section.sec3 .inner-sec3 a img {
+    margin-right: 20px;
+}
+
+/* 태블릿 */
+@media only screen and (min-width: 768px) and (max-width:1161px) {
+    #container {
+        padding-top: 155px;
+    }
+    .section.sec2 .inner-sec2 {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .section.sec2 .inner-sec2 .box {
+        width: 26.6666%;
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0 3%;
+    }
+    .section.sec2 .inner-sec2 .box a img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .section.sec3 {
+        width: 100%;
+    }
+    .section.sec3 .inner-sec3 {
+        width: 100%;
+    }
+    .section.sec3 .inner-sec3 a img {
+        width: 160px;
+        height: 52px;
+    }
+}
+
+
+/* 모바일 */
+@media only screen and (max-width:768px) {
+    .section.sec1 .inner-sec1 h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+    .section.sec2 {
+        padding: 10px 0;
+    }
+    .section.sec2 .inner-sec2 {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .section.sec2 .inner-sec2 .box {
+        width: 30;
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0 1%;
+    }
+    .section.sec2 .inner-sec2 .box:first-child {
+        padding-left: 1.8%;
+    }
+    .section.sec2 .inner-sec2 .box a h3 {
+        text-align: center;
+        border-bottom: 0;
+        border-radius: 3px;
+        background: rgb(238, 238, 238); 
+        padding: 15px 0 11px;
+        color: rgb(117, 117, 117);
+        cursor: pointer;
+    }
+    .section.sec2 .inner-sec2 .box a h3:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .section.sec2 .inner-sec2 .box ul li {
+        display: none;
+    }
+    .section.sec2 .inner-sec2 .box a img {
+        display: none;
+    }
+    .section.sec3 {
+        width: 100%;
+    }
+    .section.sec3 .inner-sec3 {
+        width: 100%;
+        background: url(../../img/downLoad_phone.png) 5px 0px / contain no-repeat;
+        padding-left: 280px;
+    }
+    .section.sec3 .inner-sec3 h3 {
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 30px;
+        padding-top: 80px;
+        margin: 0 auto;
+    }
+    .section.sec3 .inner-sec3 a {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .section.sec3 .inner-sec3 a img {
+        display: inline;
+        width: 180px;
+        height: 52px;
+    }
+    .section.sec3 .inner-sec3 a img{
+        margin-right: 10px;
+    }
+}
