@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="직방 포트폴리오, zigbang Portfolio">
+    <meta name="author" content="park jeyeon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좋은 집 구하는 기술, 직방</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="./js/jquery.min_1.12.4.js"></script>
+</head>
+
+<body>
+    <div id="wrap" style="width: 100%;">
+        <div id="header">
+            <div class="inner-header">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo.png" alt="로고 이미지">
+                    </a>
+                </div>
+                <div class="sub-gnb">
+                    <div class="inner-sub">
+                        <div class="user">
+                            <button type="button" class="user_btn">로그인 및 회원가입</button>
+                        </div>
+                    </div>
+                    <div class="inner-sub">
+                        <a href="#none" class="ceo">
+                            <img src="./img/ceo_ad_img.png" alt="중개사무소 가입 및 광고문의" width="126" height="38">
+                        </a>
+                    </div>
+                </div>
+                <!-- //.sub-gnb -->
+                <div class="gnb">
+                    <div class="inner-gnb">
+                        <ul>
+                            <li>
+                                <a href="#"><span>아파트</span><span class="small">매매/전월세/신축분양</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">매매/전·월세</a></li>
+                                    <li><a href="#">신축분양</a></li>
+                                    <li><a href="#">인구흐름</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>빌라, 투룸+</span><span class="small">신축분양/매매/전월세</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">빌라, 투룸 찾기</a></li>
+                                    <li><a href="#">찜한 매물</a></li>
+                                    <li><a href="#">빌라 내놓기(전/월세만)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>원룸</span><span class="small">전월세</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">방 찾기</a></li>
+                                    <li><a href="#">찜한 매물</a></li>
+                                    <li><a href="#">방 내놓기(전/월세만)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>오피스텔</span><span class="small">도시형생활주택/전월세</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">오피스텔 찾기</a></li>
+                                    <li><a href="#">찜한 매물</a></li>
+                                    <li><a href="#">오피스텔 내놓기(전/월세만)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>창업/사무실</span><span class="small">임대/매매</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">상가·점포</a></li>
+                                    <li><a href="#">사무실</a></li>
+                                    <li><a href="#">공유오피스</a></li>
+                                    <li><a href="#">찜한 매물</a></li>
+                                    <li><a href="#">상가/사무실 내놓기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //.inner-gnb -->
+                </div>
+                <!-- //.gnb -->
+                <a href="#none" class="toogle_Btn">
+                    <img src="./img/toogle-menu.png" alt="메뉴">
+                </a>
+                <script>
+                    const toggleBtn = document.querySelector('.toogle_Btn');
+                    const menu = document.querySelector('.gnb')
+                    
+                    toggleBtn.addEventListener('click',() => {
+                        menu.classList.toggle('active');
+                    });
+                </script>
+            <!-- //.inner-header -->
+            </div>
+        </div>
+        <!-- //header -->
+        <div id="container">
+            <div class="section sec1">
+                <div class="inner-sec1">
+                    <h1>어떤 집을 찾고 계세요?</h1>
+                </div>
+                <!-- //inner-sec1 -->
+            </div>
+            <!-- //section.sec1 -->
+            <div class="section sec2">
+                <div class="inner-sec2">
+                    <div class="box introduce">
+                        <a href="#none"><h3>소개할게요</h3></a>
+                        <a href="#none"><img src="./img/banner_main.png" alt="광고이미지"></a>
+                    </div>
+                    <div class="box news">
+                        <a href="#none"><h3>뉴스</h3></a>
+                        <ul>
+                            <li><a href="#">디렉토리 8호 발간 이벤트</a></li>
+                            <li><a href="#">직방 홈라이브 [한현민]편</a></li>
+                            <li><a href="#">왠지 나 빼고 다 열심히 사는 것 같아…</a></li>
+                            <li><a href="#">VR로 집구경 미리 해보고 산다</a></li>
+                            <li><a href="#">"직방에서 신한카드로 월세 내세요"</a></li>
+                        </ul>
+                    </div>
+                    <div class="box notice">
+                        <a href="#none"><h3>공지사항</h3></a>
+                        <ul>
+                            <li><a href="#">[공지] 직방 개인정보처리방침(2020/08/27) 개정 안내</a></li>
+                            <li><a href="#">[공지] 직방 서비스 이용약관(2020/08/10) 개정 안내</a></li>
+                            <li><a href="#">[공지] 직방 개인정보처리방침(2020/05/01) 개정 안내</a></li>
+                            <li><a href="#">[공지] 직방 개인정보처리방침(2020/02/27) 개정 안내</a></li>
+                            <li><a href="#">[공지] 직방 위치기반서비스 이용약관(2020/02/13) 개정 안내</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //.inner-sec2 -->
+            </div>
+            <!-- //section.sec2 -->
+            <div class="section sec3">
+                <div class="inner-sec3">
+                    <h3>직방앱을 다운받으세요!</h3>
+                    <a href="#none"><img src="./img/download_android.png" alt="구글플레이" onmouseover="this.src='./img/download_android-hover.png'" onmouseout="this.src='./img/download_android.png'"></a>
+                    <a href="#none"><img src="./img/download_iOS.png" onmouseover="this.src='./img/download_iOS-hover.png'" onmouseout="this.src='./img/download_iOS.png'" alt="애플스토어"></a>
+                </div>
+                <!-- //.inner-sec3 -->
+            </div>
+            <!-- //section.sec3 -->
+        </div>
+        <!-- //container -->
+        <div id="footer">
+            <div class="inner-footer">
+                <p class="footer-menu">
+                    <a href="#none">회사정보</a> |
+                    <a href="#none">채용정보</a> |
+                    <a href="#none">이용약관</a> |
+                    <a href="#none"><strong>개인정보 처리방침</strong></a> |
+                    <a href="#none">위치기반 서비스 이용약관</a> |
+                    <a href="#none">중개사 사이트 바로가기</a>
+                </p>
+                <p class="f-Copyright">
+                    상호 : (주)직방 | 대표 : 안성우 | 사업자등록번호: 120-87-61559<br>
+                    주소 : 서울특별시 서초구 서초대로 411, 5층(서초동, GT타워) (우 : 06615)<br>
+                    팩스 : 02-568-4908<br>
+                    통신판매업 신고번호 : 제2020-서울서초-0852호<br>
+                    서비스 이용문의 : 1661-8734 | 이메일 : <a href="#none">cs@zigbang.com </a> | 서비스 제휴문의 : <a href="#none">partnership@zigbang.com</a>
+                </p>
+                <p>
+                    <a href="#"><img src="./img/ico_t2_sns1.png" alt="페이스북"></a>
+                    <a href="#"><img src="./img/ico_sns_youtube.png" alt="유튜브"></a>
+                    <a href="#"><img src="./img/ico_sns_blog.png" alt="블로그"></a>
+                    <a href="#"><img src="./img/ico_t2_sns4.png" alt="포스트"></a>
+                </p>
+                <div class="Copyright">
+                    Copyright © ZIGBANG. All Rights Reserved.
+                </div>
+            </div>
+            <!-- //inner-footer -->
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wap -->
+</body>
+
+</html>
